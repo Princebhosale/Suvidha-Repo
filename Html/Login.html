@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login with Google</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../Css/Login.css">
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+	<meta name="google-signin-client_id" content="[your-client-id].apps.googleusercontent.com">
+</head>
+<body>
+    <div class="trans">
+    </div>
+  
+	<header>
+		<h1>
+            Login</h1>
+	</header>
+	<main>
+		<form id="login-form" class="login">
+			<label for="username" style="color:white">Username</label>
+			<input type="text" id="username" name="username" required>
+			<label for="password" style="color:white">Password</label>
+			<input type="password" id="password" name="password" required>
+			<input type="submit" value="Login">
+		</form>
+        
+		<div class="g-signin2" data-onsuccess="onSignIn"></div>
+        <a href="#"><button>Sign Up  </button></a>
+        
+	</main>
+
+	<footer>
+		<p>© 2023 All Rights Reserved.</p>
+    </footer>
+	<script src="../Javascript/Login.js"></script>
+
+</body>
+</html>
